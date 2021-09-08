@@ -1,1 +1,1 @@
-# gcn
+# gcn-docking
