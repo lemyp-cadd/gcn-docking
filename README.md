@@ -15,3 +15,6 @@ Luchi, Adriano; Villafañe, Roxana; Gomez Chávez, Leonardo; Angelina, Emilio, P
 
 ![gcn-architecture](https://github.com/lemyp-cadd/gcn-docking/blob/main/gcn-architecture.png)
 
+
+
+![features_vs_poses](https://github.com/lemyp-cadd/gcn-docking/blob/main/features_vs_poses.jpg)
