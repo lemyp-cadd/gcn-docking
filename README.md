@@ -17,4 +17,3 @@ Luchi, Adriano; Gómez Chávez, Leonardo; Villafañe, Roxana; Perez, Rafael; Ang
 
 
 
-![features_vs_poses](https://github.com/lemyp-cadd/gcn-docking/blob/main/features_vs_poses.jpg)
