@@ -1,4 +1,4 @@
-#  Graph neural networks and molecular docking as two complementary approaches for understanding drug-target interaction: a case study
+#  Graph neural networks and molecular docking as two complementary approaches for virtual screening: a case study on Cruzain 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
