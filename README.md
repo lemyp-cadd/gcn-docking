@@ -3,7 +3,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 Authors: 
-Luchi, Adriano; Villafañe, Roxana; Gomez Chávez, Leonardo; Angelina, Emilio, Peruchena, Nélida
+Luchi, Adriano; Gómez Chávez, Leonardo; Villafañe, Roxana; Perez, Rafael; Angelina, Emilio, Peruchena, Nélida
 
 
 *Laboratorio de Estructura Molecular y Propiedades (LEMyP) - IQUIBA-NEA, Universidad Nacional del Nordeste, CONICET, FACENA, Av. Libertad
