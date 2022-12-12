@@ -12,6 +12,7 @@ Luchi, Adriano; Gómez Chávez, Leonardo; Villafañe, Roxana; Perez, Rafael; Ang
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+This repository provides information about the training of the Graph convolutional network implemented in the work "Graph neural networks and molecular docking as two complementary approaches for virtual screening: a case study on Cruzain".
 
 ![gcn-architecture](https://github.com/lemyp-cadd/gcn-docking/blob/main/gcn-architecture.png)
 
