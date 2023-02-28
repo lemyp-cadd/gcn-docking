@@ -104,7 +104,7 @@ class Graph2Property():
     def generate_molecule(self, Z):
         return self.sess.run(self._P, feed_dict={self.Z : Z}) 
 
-    def save(self, ckpt_path) #, global_step):
+    def save(self, ckpt_path): #, global_step):
         self.saver.save(self.sess, ckpt_path) #, global_step=global_step)
         print("model saved to '%s'" % (ckpt_path))
     
