@@ -52,8 +52,7 @@ def training(model, FLAGS, modelName,path):
                     print ("train_iter : ", total_iter, ", epoch : ", epoch, ", cost :  ", cost)
                     batches_train_cost.append(cost)
 		    
-		    # Savinf
-		    path = path
+		    # Saving
                     ckpt_path = path+'/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
 		    print("model saved")
@@ -71,8 +70,7 @@ def training(model, FLAGS, modelName,path):
 #                        print ("MSE : ", mse, "\t MAE : ", mae)
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
 			
-		   	# Savinf
-		    	path = path
+		   	# Saving
                     	ckpt_path = path+'/'+modelName+'.ckpt'
                    	model.save(ckpt_path, total_iter)
 		    	print("model saved")
