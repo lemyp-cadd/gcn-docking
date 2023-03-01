@@ -66,7 +66,7 @@ def training(model, FLAGS, modelName):
         
                 if total_iter % save_every == 0:
                     # Save network! 
-                    ckpt_path = 'save/'+modelName+'.ckpt'
+                    ckpt_path = '/content/drive/My Drive/save/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
                 
             et = time.time()
