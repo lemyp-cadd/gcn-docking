@@ -66,14 +66,12 @@ def training(model, FLAGS, modelName,path):
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
         
                 if total_iter % save_every == 0:
-                    path = path
                     ckpt_path = path+'/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
-		    #print("model saved")
             
 	    # Saving
-            ckpt_path = path+'/save/'+modelName+'.ckpt'
-            model.save(ckpt_path, total_iter)
+            #ckpt_path = path+'/save/'+modelName+'.ckpt'
+           # model.save(ckpt_path, total_iter)
 		
             et = time.time()
             print ("time : ", et-st)
