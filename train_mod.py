@@ -51,11 +51,6 @@ def training(model, FLAGS, modelName,path):
                     cost = model.train(A_batch, X_batch, P_batch)
                     print ("train_iter : ", total_iter, ", epoch : ", epoch, ", cost :  ", cost)
                     batches_train_cost.append(cost)
-		    
-		    # Saving
-                  #  ckpt_path = path+'/'+modelName+'.ckpt'
-                  #  model.save(ckpt_path, total_iter)
-		#	print("model saved")
 			
                 elif total_iter % 5 == 0:
                     # Test accuracy
@@ -69,11 +64,6 @@ def training(model, FLAGS, modelName,path):
 #                        mae = (np.mean(np.abs(Y.flatten() - P_batch)))
 #                        print ("MSE : ", mse, "\t MAE : ", mae)
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
-			
-		   	# Saving
-                       # ckpt_path = path+'/'+modelName+'.ckpt'
-                       # model.save(ckpt_path, total_iter)
-                       # print("model saved")
         
                 if total_iter % save_every == 0:
                     path = path
@@ -84,7 +74,6 @@ def training(model, FLAGS, modelName,path):
 	    # Saving
             ckpt_path = path+'/save/'+modelName+'.ckpt'
             model.save(ckpt_path, total_iter)
-            print ("model saved")
 		
             et = time.time()
             print ("time : ", et-st)
