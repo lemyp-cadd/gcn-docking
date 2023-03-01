@@ -68,6 +68,7 @@ def training(model, FLAGS, modelName,path):
                     path = path
                     ckpt_path = path+'/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
+		    print("model saved on"+ path)
                 
             et = time.time()
             print ("time : ", et-st)
