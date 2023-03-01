@@ -53,8 +53,8 @@ def training(model, FLAGS, modelName,path):
                     batches_train_cost.append(cost)
 		    
 		    # Saving
-                    ckpt_path = path+'/'+modelName+'.ckpt'
-                    model.save(ckpt_path, total_iter)
+                  #  ckpt_path = path+'/'+modelName+'.ckpt'
+                  #  model.save(ckpt_path, total_iter)
 		#	print("model saved")
 			
                 elif total_iter % 5 == 0:
@@ -71,16 +71,21 @@ def training(model, FLAGS, modelName,path):
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
 			
 		   	# Saving
-                        ckpt_path = path+'/'+modelName+'.ckpt'
-                        model.save(ckpt_path, total_iter)
-                        print("model saved")
+                       # ckpt_path = path+'/'+modelName+'.ckpt'
+                       # model.save(ckpt_path, total_iter)
+                       # print("model saved")
         
                 if total_iter % save_every == 0:
                     path = path
                     ckpt_path = path+'/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
 		    #print("model saved")
-                
+            
+	    # Saving
+            ckpt_path = path+'/save/'+modelName+'.ckpt'
+            model.save(ckpt_path, total_iter)
+            print ("model saved")
+		
             et = time.time()
             print ("time : ", et-st)
             st = time.time()
