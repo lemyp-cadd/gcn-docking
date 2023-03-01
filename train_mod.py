@@ -55,7 +55,7 @@ def training(model, FLAGS, modelName,path):
 		    # Saving
                     ckpt_path = path+'/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
-		    print("model saved")
+		#	print("model saved")
 			
                 elif total_iter % 5 == 0:
                     # Test accuracy
