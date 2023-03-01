@@ -69,13 +69,11 @@ def training(model, FLAGS, modelName,path):
 #                        mae = (np.mean(np.abs(Y.flatten() - P_batch)))
 #                        print ("MSE : ", mse, "\t MAE : ", mae)
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
-                        ckpt_path = path+'/'+modelName+'.ckpt'
-		
 			
 		   	# Saving
-                    	ckpt_path = path+'/'+modelName+'.ckpt'
-                   	model.save(ckpt_path, total_iter)
-		    	print("model saved")
+                        ckpt_path = path+'/'+modelName+'.ckpt'
+                        model.save(ckpt_path, total_iter)
+                        print("model saved")
         
                 if total_iter % save_every == 0:
                     path = path
