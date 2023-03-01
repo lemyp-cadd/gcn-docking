@@ -17,7 +17,7 @@ def loadInputs(FLAGS, idx, modelName, unitLen):
     retOutput = np.load(FLAGS.database+'/potency/'+str(idx)+'.npy')
     return retInput, retOutput
 
-def training(model, FLAGS, modelName):
+def training(model, FLAGS, modelName,path):
     num_epochs = FLAGS.epoch_size
     batch_size = FLAGS.batch_size
     decay_rate = FLAGS.decay_rate
@@ -65,8 +65,8 @@ def training(model, FLAGS, modelName):
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
         
                 if total_iter % save_every == 0:
-                    # Save network! 
-                    ckpt_path = modelName+'.ckpt'
+                    path = path
+                    ckpt_path = path+'/'+modelName+'.ckpt'
                     model.save(ckpt_path, total_iter)
                 
             et = time.time()
