@@ -70,7 +70,7 @@ def training(model, FLAGS, modelName,path):
                     model.save(ckpt_path, total_iter)
             
 	    # Saving
-            ckpt_path = path+modelName+'.ckpt'
+            ckpt_path = path+modelName+'1.ckpt'
             model.save(ckpt_path, total_iter)
 		
             et = time.time()
