@@ -66,7 +66,7 @@ def training(model, FLAGS, modelName,path):
                         print ("cross entropy : ", cross_entropy_loss) ### CHANGED ###	
         
                 if total_iter % save_every == 0:
-                    ckpt_path = path+'/'+modelName+'.ckpt'
+                    ckpt_path = path+modelName+'.ckpt' # CHanged
                     model.save(ckpt_path, total_iter)
             
 	    # Saving
