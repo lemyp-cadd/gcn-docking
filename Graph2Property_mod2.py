@@ -104,9 +104,19 @@ class Graph2Property():
     def generate_molecule(self, Z):
         return self.sess.run(self._P, feed_dict={self.Z : Z}) 
 
+    #def save(self, ckpt_path, global_step):
+    #    self.saver.save(self.sess, ckpt_path, global_step=global_step)
+    #    print("model saved to '%s'" % (ckpt_path))
+    
     def save(self, ckpt_path, global_step):
-        self.saver.save(self.sess, ckpt_path, global_step=global_step)
-        print("model saved to '%s'" % (ckpt_path))
+    
+        # Create the directory if it doesn't exist
+        os.makedirs(os.path.dirname(ckpt_path), exist_ok=True)
+    
+        # Save the model to a checkpoint file
+        save_path = self.saver.save(self.sess, ckpt_path, global_step=global_step)
+        print(f"model saved to '{save_path}'")
+    
     
     def restore(self, ckpt_path):
         self.saver.restore(self.sess, ckpt_path)
