@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import blocks_mod as blocks
+import os
 
 class Graph2Property():
     def __init__(self, FLAGS):
