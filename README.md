@@ -30,7 +30,7 @@ The graph convolutional network used in this repository is based on the work of 
 #  1 - Clone github repository
 It can be downloaded in two ways: 
 
-## from the github website  
+## github website  
 
 https://github.com/lemyp-cadd/gcn-docking/archive/refs/heads/main.zip
 
