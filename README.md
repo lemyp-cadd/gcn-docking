@@ -26,9 +26,13 @@ The graph convolutional network used in this repository is based on the work of 
 #  1 - Clone github repository
 It can be downloaded directly from the github website or through the linux terminal
 
+https://github.com/lemyp-cadd/gcn-docking/archive/refs/heads/main.zip
+
 ## Install github on linux
  ```apt-get install git```
+ 
  then use git clone
+ 
  ```git clone https://github.com/lemyp-cadd/gcn-docking.git```
 
 #  2 - Convert smiles files to graph inputs at a database folder
