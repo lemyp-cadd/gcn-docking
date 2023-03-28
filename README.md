@@ -11,13 +11,15 @@ Luchi, Adriano; Gómez Chávez, José Leonardo; Villafañe, Roxana; Conti, Germ�
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+This repository provides information on training the Graph convolutional network implemented in the paper "Graph Neural Networks and Molecular Docking as Two Complementary Approaches for Virtual Screening: A Cruzain Case Study".
 
-This repository provides information about the training of the Graph convolutional network implemented in the work "Graph neural networks and molecular docking as two complementary approaches for virtual screening: a case study on Cruzain". 
+In this work, we leveraged activity data from a high-throughput quantitative screen (HTS) of ~200K compounds against Cruzain (Cz) to retrospectively evaluate the ability of a graphical convolutional network (GCN) to prioritize active compounds from the data set.
 
-The dataset used in this work corresponds to the dataset used by Ferreira, R. S. in "Complementarity between a Docking and a High-Throughput Screen in Discovering New Cruzain Inhibitors" (J. Med. Chem. 2010, 53 (13), 4891-4905, DOI: 10.1021/jm100488w). This dataset is commonly referred to as the AID 1478 dataset.
+The data set used corresponds to the data set created by Ferreira, R. S. in "Complementarity between a Docking and a High-Throughput Screen in Discovering New Cruzain Inhibitors" (J. Med. Chem. 2010, 53 (13), 4891-4905 , DOI: 10.1021/jm100488w).
+This data set is commonly known as the AID 1478 data set and is available at https://pubchem.ncbi.nlm.nih.gov/bioassay/1478#section=Data-Table
 
 All the files needed to train the Graph convolutional network are available here.
-You need to follow the steps in the usage section. Inside the notebooks are all the necessary libraries and packages for network training. You do not need to edit anything.
+You must follow the steps in the usage section. Inside the notebooks are all the libraries and packages needed for network training. You don't need to edit anything.
 
 ![gcn-architecture](https://github.com/lemyp-cadd/gcn-docking/blob/main/cover%20fig.png)
 
@@ -26,11 +28,15 @@ You need to follow the steps in the usage section. Inside the notebooks are all 
 The graph convolutional network used in this repository is based on the work of https://github.com/SeongokRyu/augmented-GCN, which in turn is built upon https://github.com/HIPS/neural-fingerprint. The hyperparameter tuning and overall architecture of the standard and augmented GCNs remain the same as in the original implementation by Ryu et al. (2018), with the exception of the last layer activation function and the loss function, which were modified for a classification task.
 
 #  1 - Clone github repository
-It can be downloaded directly from the github website or through the linux terminal
+It can be downloaded in two ways: 
+
+## from the github website  
 
 https://github.com/lemyp-cadd/gcn-docking/archive/refs/heads/main.zip
 
-## Install github on linux
+## linux terminal
+If you do not have github installed on your computer, you should install this first in your linux terminal
+
  ```apt-get install git```
  
  then use git clone
