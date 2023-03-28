@@ -43,7 +43,7 @@ If you do not have github installed on your computer, you should install this fi
  
  ```git clone https://github.com/lemyp-cadd/gcn-docking.git```
 
-#  2 - Convert smiles files to graph inputs at a database folder
+#  2 - Convert smiles files to graph inputs
 Upload the Google collaborative file named "smiles_to_graph.ipynb" to your Google Drive and follow the instructions. Inside it is an example for turning smiley molecules into graphics to be used as inputs to the GCN.
 
 #  3 - Training 
