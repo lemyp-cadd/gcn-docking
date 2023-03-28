@@ -12,7 +12,9 @@ Luchi, Adriano; Gómez Chávez, José Leonardo; Villafañe, Roxana; Conti, Germ�
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-This repository provides information about the training of the Graph convolutional network implemented in the work "Graph neural networks and molecular docking as two complementary approaches for virtual screening: a case study on Cruzain".
+This repository provides information about the training of the Graph convolutional network implemented in the work "Graph neural networks and molecular docking as two complementary approaches for virtual screening: a case study on Cruzain". 
+
+The dataset used in this work corresponds to the dataset used by Ferreira, R. S. in "Complementarity between a Docking and a High-Throughput Screen in Discovering New Cruzain Inhibitors" (J. Med. Chem. 2010, 53 (13), 4891-4905, DOI: 10.1021/jm100488w). This dataset is commonly referred to as the AID 1478 dataset.
 
 All the files needed to train the Graph convolutional network are available here.
 You need to follow the steps in the usage section. Inside the notebooks are all the necessary libraries and packages for network training. You do not need to edit anything.
