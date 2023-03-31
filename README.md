@@ -27,6 +27,8 @@ You must follow the steps in the usage section. Inside the notebooks are all the
 ------------------------------------------------------------------------------------------------------------------------------------------
 The graph convolutional network used in this repository is based on the work of https://github.com/SeongokRyu/augmented-GCN, which in turn is built upon https://github.com/HIPS/neural-fingerprint. The hyperparameter tuning and overall architecture of the standard and augmented GCNs remain the same as in the original implementation by Ryu et al. (2018), with the exception of the last layer activation function and the loss function, which were modified for a classification task.
 
+All notebooks have links to Google drive colaboratory. You just need to click on the "open in Colab" tab and then create a copy on your own google drive or if you prefer, you can clone the entire github repository and work with it.
+
 #  1 - Clone github repository
 It can be downloaded in two ways: 
 
@@ -44,9 +46,9 @@ If you do not have github installed on your computer, you should install this fi
  ```git clone https://github.com/lemyp-cadd/gcn-docking.git```
 
 #  2 - Convert smiles files to graph inputs
-Upload the Google collaborative file named "smiles_to_graph.ipynb" to your Google Drive and follow the instructions. Inside it is an example for turning smiley molecules into graphics to be used as inputs to the GCN.
+Open the Google Collaborative file called "smiles_to_graph.ipynb" and click on the "open in Colab" tab at the top. Create a copy on your google drive and follow the instructions. Inside it is an example for turning smiley molecules into graphics to be used as inputs to the GCN.
 
 #  3 - Training 
-Upload the Google collaborative file named "Augmented_GCN_custom_github.ipynb" to your Google Drive and follow the instructions. Inside it is the GCN training example used in this work.
+Open the Google Collaborative file called "Augmented_GCN_custom_github.ipynb" and click on the "open in Colab" tab at the top. Create a copy on your google drive and follow the instructions. Inside it is the GCN training example used in this work.
 
 
