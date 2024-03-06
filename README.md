@@ -51,4 +51,4 @@ Open the Google Collaborative file called "smiles_to_graph.ipynb" and click on t
 #  3 - Training 
 Open the Google Collaborative file called "Augmented_GCN_custom_github.ipynb" and click on the "open in Colab" tab at the top. Create a copy on your google drive and follow the instructions. Inside it is the GCN training example used in this work.
 
-
+Work is underway to migrate the code to TensorFlow 2. Therefore, this version is functional but will be replaced soon.
